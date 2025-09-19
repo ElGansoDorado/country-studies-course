@@ -1,0 +1,28 @@
+ol,
+ul {
+	margin: 2px 0 0 10px;
+	padding-left: 25px;
+}
+
+/* Маркер - среднее тире */
+.list-dash {
+	list-style-type: "– ";
+}
+
+/* Без маркера */
+.no-list-marker {
+	list-style: none;
+	padding-left: 5px;
+}
+
+/* Нумерованный список с маркером "цифра со скобкой" */
+.list-bracket {
+	list-style-type: none;
+	counter-reset: item;
+	padding-left: 5px;
+}
+
+.list-bracket li::before {
+	content: counter(item) ') ';
+	counter-increment: item;
+}

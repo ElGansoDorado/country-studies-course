@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>British studies</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test 4">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../test/test.css" rel="stylesheet">
+  <script src="../test/test4.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+    <div class="page-content-wrapper">
+      <h1 class="right">Test 4</h1>
+      <hr>
+      <h2>Education in the UK</h2>
+
+      <form name="test">
+        <div id="q0">
+          <div class="quest">1. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a1"> The education leaving age by the Education and Skills Act of 2008 was raised to …</div>
+          <div class="ans">
+            <label><input type="radio" name="r1" value="0">a) 16</label>
+            <label><input type="radio" name="r1" value="0">b) 17</label>
+            <label><input type="radio" name="r1" value="0">c) 18</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(0)" name="but">
+          </div>
+        </div>
+        <div id="q1" style="display:none">
+          <div class="quest">2. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a2"> The academic year in British schools is divided into … terms.</div>
+          <div class="ans">
+            <label><input type="radio" name="r2" value="1">a) 3</label>
+            <label><input type="radio" name="r2" value="1">b) 2</label>
+            <label><input type="radio" name="r2" value="1">c) 4</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(1)" name="but">
+          </div>
+        </div>
+        <div id="q2" style="display:none">
+          <div class="quest">3. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a3"> Secondary education is split between Key Stages …</div>
+          <div class="ans">
+            <label><input type="radio" name="r3" value="2">a) 2 and 3</label>
+            <label><input type="radio" name="r3" value="2">b) 3 and 4</label>
+            <label><input type="radio" name="r3" value="2">c) 4 and 5</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(2)" name="but">
+          </div>
+        </div>
+        <div id="q3" style="display:none">
+          <div class="quest">4. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a4"> University technical colleges established in&nbsp;2010 are a type of … school led by a sponsor university and have close ties to local business and industry.</div>
+          <div class="ans">
+            <label><input type="radio" name="r4" value="3">a) middle</label>
+            <label><input type="radio" name="r4" value="3">b) higher</label>
+            <label><input type="radio" name="r4" value="3">c) secondary</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(3)" name="but">
+          </div>
+        </div>
+        <div id="q4" style="display:none">
+          <div class="quest">5. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a5"> The National Curriculum places greater emphasis on the more …</div>
+          <div class="ans">
+            <label><input type="radio" name="r5" value="4">a) theoretical aspects of education</label>
+            <label><input type="radio" name="r5" value="4">b) practical aspects of education</label>
+            <label><input type="radio" name="r5" value="4">c) advanced skills teaching</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(4)" name="but">
+          </div>
+        </div>
+        <div id="q5" style="display:none">
+          <div class="quest">6. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a6"> About … of children in Great Britain go to comprehensive schools.</div>
+          <div class="ans">
+            <label><input type="radio" name="r6" value="5">a) 7</label>
+            <label><input type="radio" name="r6" value="5">b) 90</label>
+            <label><input type="radio" name="r6" value="5">c) 50</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(5)" name="but">
+          </div>
+        </div>
+        <div id="q6" style="display:none">
+          <div class="quest">7. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a7"> All state-funded schools are regularly inspected by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r7" value="6">a) the Office for Standards in Education</label>
+            <label><input type="radio" name="r7" value="6">b) the Government’s Committee</label>
+            <label><input type="radio" name="r7" value="6">c) the governors’ body</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(6)" name="but">
+          </div>
+        </div>
+        <div id="q7" style="display:none">
+          <div class="quest">8. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a8"> Day-to-day management of the school is the responsibility of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r8" value="7">a) local educational authorities</label>
+            <label><input type="radio" name="r8" value="7">b) the headteacher</label>
+            <label><input type="radio" name="r8" value="7">c) teachers and parents</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(7)" name="but">
+          </div>
+        </div>
+        <div id="q8" style="display:none">
+          <div class="quest">9. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a9"> … school education is not compulsory in the UK.</div>
+          <div class="ans">
+            <label><input type="radio" name="r9" value="8">a) Nursery</label>
+            <label><input type="radio" name="r9" value="8">b) Primary</label>
+            <label><input type="radio" name="r9" value="8">c) Secondary</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(8)" name="but">
+          </div>
+        </div>
+        <div id="q9" style="display:none">
+          <div class="quest">10. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a10"> Pre-school playgrounds are mostly organized by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r10" value="9">a) parents</label>
+            <label><input type="radio" name="r10" value="9">b) nursery schools</label>
+            <label><input type="radio" name="r10" value="9">c) communities</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(9)" name="but">
+          </div>
+        </div>
+        <div id="q10" style="display:none">
+          <div class="quest">11. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a11"> At the age of … children transfer from primary to secondary school in England, Wales and Northern Ireland.</div>
+          <div class="ans">
+            <label><input type="radio" name="r11" value="10">a) 7</label>
+            <label><input type="radio" name="r11" value="10">b) 13</label>
+            <label><input type="radio" name="r11" value="10">c) 11</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(10)" name="but">
+          </div>
+        </div>
+        <div id="q11" style="display:none">
+          <div class="quest">12. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a12"> Parents who wish to send their children to a public school often send them first to a …</div>
+          <div class="ans">
+            <label><input type="radio" name="r12" value="11">a) primary school</label>
+            <label><input type="radio" name="r12" value="11">b) middle school</label>
+            <label><input type="radio" name="r12" value="11">c) preparatory school</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(11)" name="but">
+          </div>
+        </div>
+        <div id="q12" style="display:none">
+          <div class="quest">13. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a13"> … schools receive no state funding.</div>
+          <div class="ans">
+            <label><input type="radio" name="r13" value="12">a) County</label>
+            <label><input type="radio" name="r13" value="12">b) Public</label>
+            <label><input type="radio" name="r13" value="12">c) Voluntary</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(12)" name="but">
+          </div>
+        </div>
+        <div id="q13" style="display:none">
+          <div class="quest">14. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a14"> The oldest public school in England is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r14" value="13">a) Eton</label>
+            <label><input type="radio" name="r14" value="13">b) Harrow School</label>
+            <label><input type="radio" name="r14" value="13">c) Winchester College</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(13)" name="but">
+          </div>
+        </div>
+        <div id="q14" style="display:none">
+          <div class="quest">15. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a15"> … is the main standard for entrance to higher education.</div>
+          <div class="ans">
+            <label><input type="radio" name="r15" value="14">a) General Certificate of Secondary Education</label>
+            <label><input type="radio" name="r15" value="14">b) General Certificate of Education (A level)</label>
+            <label><input type="radio" name="r15" value="14">c) Higher National Certificate</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(14)" name="but">
+          </div>
+        </div>
+        <div id="q15" style="display:none">
+          <div class="quest">16. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a16"> Admission to British Universities is carried out by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r16" value="15">a) examinations and interviews</label>
+            <label><input type="radio" name="r16" value="15">b) interviews</label>
+            <label><input type="radio" name="r16" value="15">c) applications</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(15)" name="but">
+          </div>
+        </div>
+        <div id="q16" style="display:none">
+          <div class="quest">17. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a17"> The oldest university in Great Britain is … University.</div>
+          <div class="ans">
+            <label><input type="radio" name="r17" value="16">a) Cambridge</label>
+            <label><input type="radio" name="r17" value="16">b) Oxford</label>
+            <label><input type="radio" name="r17" value="16">c) London</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(16)" name="but">
+          </div>
+        </div>
+        <div id="q17" style="display:none">
+          <div class="quest">18. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a18"> Teaching at Oxbridge is based on …</div>
+          <div class="ans">
+            <label><input type="radio" name="r18" value="17">a) lectures and seminars</label>
+            <label><input type="radio" name="r18" value="17">b) tutorial system</label>
+            <label><input type="radio" name="r18" value="17">c) distance learning</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(17)" name="but">
+          </div>
+        </div>
+        <div id="q18" style="display:none">
+          <div class="quest">19. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a19"> … have the highest academic reputation in the UK.</div>
+          <div class="ans">
+            <label><input type="radio" name="r19" value="18">a) Oxford and Cambridge</label>
+            <label><input type="radio" name="r19" value="18">b) London and Bristol</label>
+            <label><input type="radio" name="r19" value="18">c) red-brick Universities</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(18)" name="but">
+          </div>
+        </div>
+        <div id="q19" style="display:none">
+          <div class="quest">20. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a20"> The Red Brick universities were founded in the … century.</div>
+          <div class="ans">
+            <label><input type="radio" name="r20" value="19">a) 18th</label>
+            <label><input type="radio" name="r20" value="19">b) 19th</label>
+            <label><input type="radio" name="r20" value="19">c) 17th</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(19)" name="but">
+          </div>
+        </div>
+        <div id="q20" style="display:none">
+          <div class="quest">21. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a21"> Students studying for the first degree are called …</div>
+          <div class="ans">
+            <label><input type="radio" name="r21" value="20">a) undergraduates</label>
+            <label><input type="radio" name="r21" value="20">b) graduates</label>
+            <label><input type="radio" name="r21" value="20">c) postgraduates</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(20)" name="but">
+          </div>
+        </div>
+        <div id="q21" style="display:none">
+          <div class="quest">22. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a22"> The Open University was founded by the Labour government in the … century.</div>
+          <div class="ans">
+            <label><input type="radio" name="r22" value="21">a) second half of the 20th</label>
+            <label><input type="radio" name="r22" value="21">b) first half of the 20th</label>
+            <label><input type="radio" name="r22" value="21">c) second half of the 19th</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(21)" name="but">
+          </div>
+        </div>
+        <div id="q22" style="display:none">
+          <div class="quest">23. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a23"> The academic year in Britain’s universities is divided into … terms.</div>
+          <div class="ans">
+            <label><input type="radio" name="r23" value="22">a) two</label>
+            <label><input type="radio" name="r23" value="22">b) three</label>
+            <label><input type="radio" name="r23" value="22">c) four</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(22)" name="but">
+          </div>
+        </div>
+        <div id="q23" style="display:none">
+          <div class="quest">24. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a24"> The first degree awarded by universities is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r24" value="23">a) a doctor’s degree</label>
+            <label><input type="radio" name="r24" value="23">b) a bachelor’s degree</label>
+            <label><input type="radio" name="r24" value="23">c) a master’s degree</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(23)" name="but">
+          </div>
+        </div>
+        <div id="q24" style="display:none">
+          <div class="quest">25. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a25"> The course of studies for a bachelor’s degree is … years.</div>
+          <div class="ans">
+            <label><input type="radio" name="r25" value="24">a) two</label>
+            <label><input type="radio" name="r25" value="24">b) three</label>
+            <label><input type="radio" name="r25" value="24">c) four</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(24)" name="but">
+          </div>
+        </div>
+      </form>
+      <div id="q25" style="display:none">
+        <div id="result"></div>
+      </div>
+
+      <hr>
+    </div>
+    <div class="nav-buttons">
+      <a class="nav-button prev-button" title="К предыдущей главе" href="6.3.html" >&#8249;</a>
+      <a class="nav-button next-button" title="К следующей главе" href="6.5.html">&#8250;</a>
+    </div>
+  </div>
+  <script src="../test/func_multiPage.js"></script>
+</body>
+
+</html>

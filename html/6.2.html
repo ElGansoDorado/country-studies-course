@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>British studies</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test 2">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../test/test.css" rel="stylesheet">
+  <script src="../test/test2.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+    <div class="page-content-wrapper">
+      <h1 class="right">Test 2</h1>
+      <hr>
+      <h2>History of the UK</h2>
+
+      <form name="test">
+        <div id="q0">
+          <div class="quest">1. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a1"> The first inhabitants of Great Britain are thought to have come from …</div>
+          <div class="ans">
+            <label><input type="radio" name="r1" value="0">a) the east of Europe</label>
+            <label><input type="radio" name="r1" value="0">b) the region of the Mediterranean Sea</label>
+            <label><input type="radio" name="r1" value="0">c) Central Europe</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(0)" name="but">
+          </div>
+        </div>
+        <div id="q1" style="display:none">
+          <div class="quest">2. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a2"> … were a special group among the Celts who were both priests and doctors.</div>
+          <div class="ans">
+            <label><input type="radio" name="r2" value="1">a) The Beaker people</label>
+            <label><input type="radio" name="r2" value="1">b) The Druids</label>
+            <label><input type="radio" name="r2" value="1">c) The Knights of the Table</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(1)" name="but">
+          </div>
+        </div>
+        <div id="q2" style="display:none">
+          <div class="quest">3. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a3"> The most famous prehistoric monument Stonehenge is situated in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r3" value="2">a) England</label>
+            <label><input type="radio" name="r3" value="2">b) Wales</label>
+            <label><input type="radio" name="r3" value="2">c) Northern Ireland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(2)" name="but">
+          </div>
+        </div>
+        <div id="q3" style="display:none">
+          <div class="quest">4. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a4"> The Beaker people were called so because of the … found in their graves.</div>
+          <div class="ans">
+            <label><input type="radio" name="r4" value="3">a) weapons</label>
+            <label><input type="radio" name="r4" value="3">b) pottery vessels</label>
+            <label><input type="radio" name="r4" value="3">c) horseshoes</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(3)" name="but">
+          </div>
+        </div>
+        <div id="q4" style="display:none">
+          <div class="quest">5. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a5"> The Roman occupation of Britain started …</div>
+          <div class="ans">
+            <label><input type="radio" name="r5" value="4">a) in&nbsp;43 A. D.</label>
+            <label><input type="radio" name="r5" value="4">b) at the beginning of the 5th century</label>
+            <label><input type="radio" name="r5" value="4">c) after 3000 B. C.</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(4)" name="but">
+          </div>
+        </div>
+        <div id="q5" style="display:none">
+          <div class="quest">6. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a6"> Most British towns with names ending with “chester” were in Roman times …</div>
+          <div class="ans">
+            <label><input type="radio" name="r6" value="5">a) fortified camps</label>
+            <label><input type="radio" name="r6" value="5">b) mineral springs</label>
+            <label><input type="radio" name="r6" value="5">c) Celtic settlements</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(5)" name="but">
+          </div>
+        </div>
+        <div id="q6" style="display:none">
+          <div class="quest">7. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a7"> Hadrian’s Wall was built by the Romans …</div>
+          <div class="ans">
+            <label><input type="radio" name="r7" value="6">a) in the north of England near Scotland</label>
+            <label><input type="radio" name="r7" value="6">b) in the west of England near Wales</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(6)" name="but">
+          </div>
+        </div>
+        <div id="q7" style="display:none">
+          <div class="quest">8. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a8"> The Romans left the British Isles …</div>
+          <div class="ans">
+            <label><input type="radio" name="r8" value="7">a) in&nbsp;43 AD</label>
+            <label><input type="radio" name="r8" value="7">b) in&nbsp;54 BC</label>
+            <label><input type="radio" name="r8" value="7">c) in the 5th century</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(7)" name="but">
+          </div>
+        </div>
+        <div id="q8" style="display:none">
+          <div class="quest">9. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a9"> Of the three Germanic tribes the first to come to Britain were …</div>
+          <div class="ans">
+            <label><input type="radio" name="r9" value="8">a) the Saxons</label>
+            <label><input type="radio" name="r9" value="8">b) the Jutes</label>
+            <label><input type="radio" name="r9" value="8">c) the Angles</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(8)" name="but">
+          </div>
+        </div>
+        <div id="q9" style="display:none">
+          <div class="quest">10. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a10"> The Saxons divided the land into administrative areas called …</div>
+          <div class="ans">
+            <label><input type="radio" name="r10" value="9">a) shires</label>
+            <label><input type="radio" name="r10" value="9">b) moots</label>
+            <label><input type="radio" name="r10" value="9">c) councils</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(9)" name="but">
+          </div>
+        </div>
+        <div id="q10" style="display:none">
+          <div class="quest">11. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a11"> The Saxon kingdoms fought one against the other, but at the beginning of the 9th century …</div>
+          <div class="ans">
+            <label><input type="radio" name="r11" value="10">a) Wessex became the leading kingdom which united all the country in the struggle against the Danes</label>
+            <label><input type="radio" name="r11" value="10">b) the Danes occupied all Britain under their rule </label>
+            <label><input type="radio" name="r11" value="10">c) peace was established as a result of the adoption of Christianity</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(10)" name="but">
+          </div>
+        </div>
+        <div id="q11" style="display:none">
+          <div class="quest">12. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a12"> As the Anglo-Saxons worshipped different gods …</div>
+          <div class="ans">
+            <label><input type="radio" name="r12" value="11">a) their names are reflected in the names of the months of the year</label>
+            <label><input type="radio" name="r12" value="11">b) their names are reflected in the names of the days of the week</label>
+            <label><input type="radio" name="r12" value="11">c) their statues are seen in different parts of the country</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(11)" name="but">
+          </div>
+        </div>
+        <div id="q12" style="display:none">
+          <div class="quest">13. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a13"> According to legends King Arthur ruled …</div>
+          <div class="ans">
+            <label><input type="radio" name="r13" value="12">a) from the castle in Camelot</label>
+            <label><input type="radio" name="r13" value="12">b) England in the 15th century</label>
+            <label><input type="radio" name="r13" value="12">c) together with his beautiful queen in Glastonbury</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(12)" name="but">
+          </div>
+        </div>
+        <div id="q13" style="display:none">
+          <div class="quest">14. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a14"> When Arthur and his knights met together they sat at a … table.</div>
+          <div class="ans">
+            <label><input type="radio" name="r14" value="13">a) square</label>
+            <label><input type="radio" name="r14" value="13">b) long</label>
+            <label><input type="radio" name="r14" value="13">c) round</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(13)" name="but">
+          </div>
+        </div>
+        <div id="q14" style="display:none">
+          <div class="quest">15. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a15"> The name of King Arthur’s queen is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r15" value="14">a) Boadicea</label>
+            <label><input type="radio" name="r15" value="14">b) Matilda</label>
+            <label><input type="radio" name="r15" value="14">c) Guinevere</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(14)" name="but">
+          </div>
+        </div>
+        <div id="q15" style="display:none">
+          <div class="quest">16. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a16"> … was an old magician at the court of King Arthur.</div>
+          <div class="ans">
+            <label><input type="radio" name="r16" value="15">a) Gawain</label>
+            <label><input type="radio" name="r16" value="15">b) Excalibur</label>
+            <label><input type="radio" name="r16" value="15">c) Merlin</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(15)" name="but">
+          </div>
+        </div>
+        <div id="q16" style="display:none">
+          <div class="quest">17. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a17"> An important event which contributed to the unification of the country was the adoption of Christianity in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r17" value="16">a) 829</label>
+            <label><input type="radio" name="r17" value="16">b) 664</label>
+            <label><input type="radio" name="r17" value="16">c) 597</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(16)" name="but">
+          </div>
+        </div>
+        <div id="q17" style="display:none">
+          <div class="quest">18. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a18"> King … organized the struggle against the Danes in the 9th century.</div>
+          <div class="ans">
+            <label><input type="radio" name="r18" value="17">a) Alfred</label>
+            <label><input type="radio" name="r18" value="17">b) Edward</label>
+            <label><input type="radio" name="r18" value="17">c) Arthur</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(17)" name="but">
+          </div>
+        </div>
+        <div id="q18" style="display:none">
+          <div class="quest">19. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a19"> King Alfred is considered to be the founder of the English …</div>
+          <div class="ans">
+            <label><input type="radio" name="r19" value="18">a) army</label>
+            <label><input type="radio" name="r19" value="18">b) fleet</label>
+            <label><input type="radio" name="r19" value="18">c) system of education</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(18)" name="but">
+          </div>
+        </div>
+        <div id="q19" style="display:none">
+          <div class="quest">20. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a20"> The Normans conquered England in … </div>
+          <div class="ans">
+            <label><input type="radio" name="r20" value="19">a) 1044</label>
+            <label><input type="radio" name="r20" value="19">b) 1066</label>
+            <label><input type="radio" name="r20" value="19">c) 1100</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(19)" name="but">
+          </div>
+        </div>
+        <div id="q20" style="display:none">
+          <div class="quest">21. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a21"> King … was killed at the battle of Hastings.</div>
+          <div class="ans">
+            <label><input type="radio" name="r21" value="20">a) Edmund II</label>
+            <label><input type="radio" name="r21" value="20">b) Harold</label>
+            <label><input type="radio" name="r21" value="20">c) Arthur</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(20)" name="but">
+          </div>
+        </div>
+        <div id="q21" style="display:none">
+          <div class="quest">22. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a22"> Domesday Book was ordered in&nbsp;1086 by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r22" value="21">a) Julius Caesar</label>
+            <label><input type="radio" name="r22" value="21">b) William the Conqueror</label>
+            <label><input type="radio" name="r22" value="21">d) Elisabeth II</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(21)" name="but">
+          </div>
+        </div>
+        <div id="q22" style="display:none">
+          <div class="quest">23. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a23"> In the 11th century … provided information on the ownership of each piece of land and its price.</div>
+          <div class="ans">
+            <label><input type="radio" name="r23" value="22">a) Anglo-Saxon Chronicle</label>
+            <label><input type="radio" name="r23" value="22">b) Domesday Book</label>
+            <label><input type="radio" name="r23" value="22">c) William the Conqueror’s Notes</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(22)" name="but">
+          </div>
+        </div>
+        <div id="q23" style="display:none">
+          <div class="quest">24. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a24"> The Tower of London was started by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r24" value="23">a) Julius Caesar</label>
+            <label><input type="radio" name="r24" value="23">b) Henry VIII</label>
+            <label><input type="radio" name="r24" value="23">c) William the Conqueror</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(23)" name="but">
+          </div>
+        </div>
+        <div id="q24" style="display:none">
+          <div class="quest">25. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a25"> The ceremony when the eldest son of the monarch becomes the official heir to the throne receiving the title Prince of Wales takes place in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r25" value="24">a) Hastings</label>
+            <label><input type="radio" name="r25" value="24">b) London</label>
+            <label><input type="radio" name="r25" value="24">c) Caernarvon</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(24)" name="but">
+          </div>
+        </div>
+        <div id="q25" style="display:none">
+          <div class="quest">26. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a26"> The final unification of England and Scotland took place in … when both sides agreed to form a single parliament in London.</div>
+          <div class="ans">
+            <label><input type="radio" name="r26" value="25">a) 1707</label>
+            <label><input type="radio" name="r26" value="25">b) 1603</label>
+            <label><input type="radio" name="r26" value="25">c) 1999</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(25)" name="but">
+          </div>
+        </div>
+        <div id="q26" style="display:none">
+          <div class="quest">27. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a27"> Robert Bruce is a national hero in Scotland because he …</div>
+          <div class="ans">
+            <label><input type="radio" name="r27" value="26">a) defeated the English at Bannockburn in&nbsp;1314</label>
+            <label><input type="radio" name="r27" value="26">b) was the first king of the Scots</label>
+            <label><input type="radio" name="r27" value="26">c) wrote poems about the Scots</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(26)" name="but">
+          </div>
+        </div>
+        <div id="q27" style="display:none">
+          <div class="quest">28. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a28"> The province of Northern Ireland which is part of the United Kingdom consists of … counties.</div>
+          <div class="ans">
+            <label><input type="radio" name="r28" value="27">a) 26</label>
+            <label><input type="radio" name="r28" value="27">b) 6</label>
+            <label><input type="radio" name="r28" value="27">c) 16</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(27)" name="but">
+          </div>
+        </div>
+        <div id="q28" style="display:none">
+          <div class="quest">29. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a29"> For years there has been a conflict between … in Northern Ireland.</div>
+          <div class="ans">
+            <label><input type="radio" name="r29" value="28">a) the Catholics</label>
+            <label><input type="radio" name="r29" value="28">b) the Protestants</label>
+            <label><input type="radio" name="r29" value="28">c) the Catholics and Protestants</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(28)" name="but">
+          </div>
+        </div>
+        <div id="q29" style="display:none">
+          <div class="quest">30. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a30"> The Irish Free State and Northern Ireland were formed …</div>
+          <div class="ans">
+            <label><input type="radio" name="r30" value="29">a) at the end of the 19th century</label>
+            <label><input type="radio" name="r30" value="29">b) in&nbsp;1921 when the partition of Ireland took place</label>
+            <label><input type="radio" name="r30" value="29">c) in&nbsp;1941</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(29)" name="but">
+          </div>
+        </div>
+        <div id="q30" style="display:none">
+          <div class="quest">31. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a31"> One of the greatest tragedies of Ireland in the 19th century was the Great Hunger of 1845–1849 when …</div>
+          <div class="ans">
+            <label><input type="radio" name="r31" value="30">a) due to the poor grain harvest many people died</label>
+            <label><input type="radio" name="r31" value="30">b) many peasants started sheep raising</label>
+            <label><input type="radio" name="r31" value="30">c) because of the bad potato harvest many people died and more than one million emigrated to the USA</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(30)" name="but">
+          </div>
+        </div>
+        <div id="q31" style="display:none">
+          <div class="quest">32. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a32"> Magna Carta, the ‘great charter’ of legal rights, dates back to …</div>
+          <div class="ans">
+            <label><input type="radio" name="r32" value="31">a) 1215</label>
+            <label><input type="radio" name="r32" value="31">b) 1285</label>
+            <label><input type="radio" name="r32" value="31">c) 1236</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(31)" name="but">
+          </div>
+        </div>
+        <div id="q32" style="display:none">
+          <div class="quest">33. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a33"> English kings conquered large areas of France during …</div>
+          <div class="ans">
+            <label><input type="radio" name="r33" value="32">a) the Norman Conquest</label>
+            <label><input type="radio" name="r33" value="32">b) the Crusades</label>
+            <label><input type="radio" name="r33" value="32">c) The Hundred Years’ War</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(32)" name="but">
+          </div>
+        </div>
+        <div id="q33" style="display:none">
+          <div class="quest">34. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a34"> The loss of … meant that the ‘first British Empire’ came to an end.</div>
+          <div class="ans">
+            <label><input type="radio" name="r34" value="33">a) the American colonies</label>
+            <label><input type="radio" name="r34" value="33">b) India</label>
+            <label><input type="radio" name="r34" value="33">c) the Sudan</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(33)" name="but">
+          </div>
+        </div>
+        <div id="q34" style="display:none">
+          <div class="quest">35. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a35"> In the 1700s, Britain fought a number of wars against …</div>
+          <div class="ans">
+            <label><input type="radio" name="r35" value="34">a) Germany</label>
+            <label><input type="radio" name="r35" value="34">b) France</label>
+            <label><input type="radio" name="r35" value="34">c) Spain</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(34)" name="but">
+          </div>
+        </div>
+        <div id="q35" style="display:none">
+          <div class="quest">36. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a36"> The University of Oxford was established under …</div>
+          <div class="ans">
+            <label><input type="radio" name="r36" value="35">a) Henry I</label>
+            <label><input type="radio" name="r36" value="35">b) Henry II</label>
+            <label><input type="radio" name="r36" value="35">c) Stephen</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(35)" name="but">
+          </div>
+        </div>
+        <div id="q36" style="display:none">
+          <div class="quest">37. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a37"> The Wars of the Roses broke out in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r37" value="36">a) 1415</label>
+            <label><input type="radio" name="r37" value="36">b) 1485</label>
+            <label><input type="radio" name="r37" value="36">c) 1455</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(36)" name="but">
+          </div>
+        </div>
+        <div id="q37" style="display:none">
+          <div class="quest">38. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a38"> The founder of the House of Tudor was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r38" value="37">a) Henry VIII</label>
+            <label><input type="radio" name="r38" value="37">b) Henry VII</label>
+            <label><input type="radio" name="r38" value="37">c) Richard III</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(37)" name="but">
+          </div>
+        </div>
+        <div id="q38" style="display:none">
+          <div class="quest">39. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a39"> The king who proclaimed himself head of the Church of England and dissolved all the monasteries in the country was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r39" value="38">a) Henry VIII</label>
+            <label><input type="radio" name="r39" value="38">b) Henry VII</label>
+            <label><input type="radio" name="r39" value="38">c) Henry VI</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(38)" name="but">
+          </div>
+        </div>
+        <div id="q39" style="display:none">
+          <div class="quest">40. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a40"> The queen who intended to restore Roman Catholicism to England, executing over 300 religious dissenters in her 5-year reign was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r40" value="39">a) Mary Stuart</label>
+            <label><input type="radio" name="r40" value="39">b) Elizabeth I</label>
+            <label><input type="radio" name="r40" value="39">c) Mary (I)&nbsp;/ Bloody Mary</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(39)" name="but">
+          </div>
+        </div>
+        <div id="q40" style="display:none">
+          <div class="quest">41. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a41"> James VI of Scotland who succeeded Elizabeth as King James I of England creating the United Kingdom was the son of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r41" value="40">a) Mary Stuart</label>
+            <label><input type="radio" name="r41" value="40">b) Matilda</label>
+            <label><input type="radio" name="r41" value="40">c) Mary I</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(40)" name="but">
+          </div>
+        </div>
+        <div id="q41" style="display:none">
+          <div class="quest">42. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a42"> … totalitarian handling of the Parliament eventually culminated in the English Civil War.</div>
+          <div class="ans">
+            <label><input type="radio" name="r42" value="41">a) Charles I’s</label>
+            <label><input type="radio" name="r42" value="41">b) James’s</label>
+            <label><input type="radio" name="r42" value="41">c) Elizabeth I’s</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(41)" name="but">
+          </div>
+        </div>
+        <div id="q42" style="display:none">
+          <div class="quest">43. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a43"> The Whig and Tory parties were created during the reign of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r43" value="42">a) Charles I</label>
+            <label><input type="radio" name="r43" value="42">b) Charles II</label>
+            <label><input type="radio" name="r43" value="42">c) Oliver Cromwell</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(42)" name="but">
+          </div>
+        </div>
+        <div id="q43" style="display:none">
+          <div class="quest">44. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a44"> The Act of Union joined the Scottish and the English Parliaments creating the single Kingdom of Great Britain and centralizing political power in London was passed in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r44" value="43">a) 1807</label>
+            <label><input type="radio" name="r44" value="43">b) 1707</label>
+            <label><input type="radio" name="r44" value="43">c) 1907</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(43)" name="but">
+          </div>
+        </div>
+        <div id="q44" style="display:none">
+          <div class="quest">45. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a45"> The king who couldn’t speak a word of English, which led him to appoint Prime Minister was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r45" value="44">a) George I</label>
+            <label><input type="radio" name="r45" value="44">b) George II</label>
+            <label><input type="radio" name="r45" value="44">c) George III</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(44)" name="but">
+          </div>
+        </div>
+        <div id="q45" style="display:none">
+          <div class="quest">46. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a46"> The first Hanoverian king to be born in England was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r46" value="45">a) George I</label>
+            <label><input type="radio" name="r46" value="45">b) George II</label>
+            <label><input type="radio" name="r46" value="45">c) George III</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(45)" name="but">
+          </div>
+        </div>
+        <div id="q46" style="display:none">
+          <div class="quest">47. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a47"> Queen Victoria died in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r47" value="46">a) 1910</label>
+            <label><input type="radio" name="r47" value="46">b) 1901</label>
+            <label><input type="radio" name="r47" value="46">c) 1899</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(46)" name="but">
+          </div>
+        </div>
+        <div id="q47" style="display:none">
+          <div class="quest">48. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a48"> The Labor Party was created in Britain …</div>
+          <div class="ans">
+            <label><input type="radio" name="r48" value="47">a) after World War I</label>
+            <label><input type="radio" name="r48" value="47">b) before World War I</label>
+            <label><input type="radio" name="r48" value="47">c) before World War II</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(47)" name="but">
+          </div>
+        </div>
+        <div id="q48" style="display:none">
+          <div class="quest">49. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a49"> The Prime Minister of the UK during the Second World War was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r49" value="48">a) Tony Blair</label>
+            <label><input type="radio" name="r49" value="48">b) Robert Walpole</label>
+            <label><input type="radio" name="r49" value="48">c) Winston Churchill</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(48)" name="but">
+          </div>
+        </div>
+        <div id="q49" style="display:none">
+          <div class="quest">50. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a50"> Charles III ascended to the throne in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r50" value="49">a) 1952</label>
+            <label><input type="radio" name="r50" value="49">b) 2022</label>
+            <label><input type="radio" name="r50" value="49">c) 1998</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(49)" name="but">
+          </div>
+        </div>
+      </form>
+      <div id="q50" style="display:none">
+        <div id="result"></div>
+      </div>
+
+      <hr>
+    </div>
+    <div class="nav-buttons">
+      <a class="nav-button prev-button" title="К предыдущей главе" href="6.1.html" >&#8249;</a>
+      <a class="nav-button next-button" title="К следующей главе" href="6.3.html">&#8250;</a>
+    </div>
+  </div>
+  <script src="../test/func_multiPage.js"></script>
+</body>
+
+</html>

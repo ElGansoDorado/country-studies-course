@@ -1,0 +1,39 @@
+/* Стили изображений */
+figure,
+img {
+  max-width: 100%;
+}
+
+.images {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/* Для изображений с обтеканием */
+figure.left,
+img.left {
+  float: left;
+  margin: 2px 7px 2px 0;
+}
+
+figure.right,
+img.right {
+  float: right;
+  margin: 2px 0 2px 7px;
+}
+
+img.center {
+  display: block;
+}
+
+img.center,
+figure.center {
+  margin: 7px auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12pt;
+  font-style: italic;
+}

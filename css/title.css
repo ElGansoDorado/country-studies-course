@@ -1,0 +1,74 @@
+/* Стили титульной страницы */
+.title-page {
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.title-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	flex-grow: 1;
+}
+
+.title-content-center {
+	justify-content: center;
+}
+
+.department {
+	margin-top: 5px;
+	font-style: italic;
+	text-align: center;
+	font-size: 14pt;
+	text-indent: 0px;
+}
+
+.book-title-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.author {
+	margin-top: 60px; /* Чтобы название поднять на уровень навигационных кнопок (зависит от наличия кафедры и для кого ЭУМК) */
+	text-align: center;
+	text-indent: 0;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+.book-title {
+	margin: 15px 0;
+	text-align: center;
+	text-indent: 0px;
+	font-size: 24pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.down-brsu {
+	font-size: 12pt;	
+	text-align: center;
+	text-indent: 0;
+}
+
+.udk {
+	text-indent: 0px;
+}
+
+.footer-grif {
+	margin: 0 70px 20px 70px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	font-size: 12pt;
+}

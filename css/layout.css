@@ -1,0 +1,73 @@
+/* Стили с разметкой страницы */
+/* Область контента*/
+.page-content-wrapper {
+	margin: 20px 70px;
+}
+
+/* Кнопки навигации */
+.nav-button {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	background-color: #282828;
+	border-radius: 10px;
+	font-size: 32pt;
+	line-height: 1;
+}
+
+.prev-button {
+	left: 10px;
+}
+
+.next-button {
+	right: 10px;
+}
+
+.nav-button:hover {
+	color: #6a5acd;
+	text-decoration: none;
+}
+
+/* Всякие отступы */
+.top-indent {
+	margin-top: 20px;
+}
+
+.xxl-top-indent {
+	margin-top: 50px;
+}
+
+.top-bottom-indent {
+	margin: 10px 0;
+}
+
+.small-top-indent {
+	margin-top: 10px;
+}
+
+/* Блок с выравниванием по центру (для авторов и рецензентов) */
+.center-block {
+	text-align: center;
+}
+
+.center-block p {
+	text-indent: 0;
+}
+
+/* Скрыть элемент со страницы */
+.hidden {
+	visibility: hidden;
+}
+
+/* Убрать/добавить отступ элементам */
+.no-indent {
+	text-indent: 0;
+}
+
+.indent {
+	text-indent: 40px;
+}

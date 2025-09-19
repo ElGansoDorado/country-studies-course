@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+.frames-page {
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.iframes {
+	display: flex;
+	flex-grow: 1;
+	max-width: 1355px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#side-menu {
+	border: 0;
+}
+
+#content {
+	width: calc(100% - 375px);
+	border: 0;
+}

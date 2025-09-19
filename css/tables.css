@@ -1,0 +1,94 @@
+/* Стили таблиц */
+
+/* Общие стили для таблиц */
+table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin: 6pt auto;
+}
+
+tr,
+td,
+th {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	font: 14pt Times New Roman;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+
+th > p,
+td > p {
+	text-indent: 0;
+}
+
+td {
+	vertical-align: top;
+}
+
+/* Таблица слева с общим отступом как у абзацев*/
+table.left {
+	margin-left: 40px;
+}
+
+/* Таблица без границ */
+table.no-border,
+table.no-border th,
+table.no-border td,
+table.no-border tr {
+	border: 0;
+}
+
+/* Таблица с границами-точками */
+table.dotted,
+table.dotted tr,
+table.dotted th,
+table.dotted td {
+	border: 1px dotted #000;
+}
+
+/* Центрирование текста в таблицах */
+table.center tr,
+tr.center,
+td.center {
+	text-align: center;
+}
+
+/* Поворот текста в ячейке */
+td.rotate {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+/* Вертикальное выравнивание в ячейке */
+td.vertical {
+	vertical-align: middle;
+}
+
+/* Стили ниже пока не знаю для чего */
+#table {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: -5px;
+}
+
+#imgtable {
+	border: 0px solid #000;
+	border-collapse: collapse;
+	margin: 5px auto;
+}
+
+#imgtable tr,
+#imgtable td,
+#imgtable th {
+	border: 0;
+	border-collapse: collapse;
+	font: 12pt Times New Roman;
+	padding: 1px 3px;
+}

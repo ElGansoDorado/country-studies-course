@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>British studies</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test 5">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../test/test.css" rel="stylesheet">
+  <script src="../test/test5.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+    <div class="page-content-wrapper">
+      <h1 class="right">Test 5</h1>
+      <hr>
+      <h2>British Culture and Ways of Life</h2>
+
+      <form name="test">
+        <div id="q0">
+          <div class="quest">1. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a1"> There is a great number of French words in English because French …</div>
+          <div class="ans">
+            <label><input type="radio" name="r1" value="0">a) became the official language in Britain after the Norman invasion</label>
+            <label><input type="radio" name="r1" value="0">b) was borrowed by the English when Christianity spread in England</label>
+            <label><input type="radio" name="r1" value="0">c) nobles had land possessions in England</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(0)" name="but">
+          </div>
+        </div>
+        <div id="q1" style="display:none">
+          <div class="quest">2. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a2"> The Gaelic language in Northern Ireland is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r2" value="1">a) spoken in some families, especially in the west</label>
+            <label><input type="radio" name="r2" value="1">b) is not different from English</label>
+            <label><input type="radio" name="r2" value="1">c) spoken widely by the population in towns</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(1)" name="but">
+          </div>
+        </div>
+        <div id="q2" style="display:none">
+          <div class="quest">3. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a3"> The official religion of the UK is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r3" value="2">a) Catholicism</label>
+            <label><input type="radio" name="r3" value="2">b) Christianity</label>
+            <label><input type="radio" name="r3" value="2">c) Muslim</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(2)" name="but">
+          </div>
+        </div>
+        <div id="q3" style="display:none">
+          <div class="quest">4. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a4"> The Church of Scotland is known as …</div>
+          <div class="ans">
+            <label><input type="radio" name="r4" value="3">a) Kirk</label>
+            <label><input type="radio" name="r4" value="3">b) Anglican Church</label>
+            <label><input type="radio" name="r4" value="3">c) Presbyterian Church</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(3)" name="but">
+          </div>
+        </div>
+        <div id="q4" style="display:none">
+          <div class="quest">5. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a5"> One of the British Christmas traditions is the Monarch’s Speech on Christmas Day which started in&nbsp;1932 with …</div>
+          <div class="ans">
+            <label><input type="radio" name="r5" value="4">a) Queen Elizabeth</label>
+            <label><input type="radio" name="r5" value="4">b) King George V</label>
+            <label><input type="radio" name="r5" value="4">c) Queen Victoria</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(4)" name="but">
+          </div>
+        </div>
+        <div id="q5" style="display:none">
+          <div class="quest">6. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a6"> Eisteddfod means an annual competition in … where people meet to dance, sing and read poems.</div>
+          <div class="ans">
+            <label><input type="radio" name="r6" value="5">a) Scotland</label>
+            <label><input type="radio" name="r6" value="5">b) England</label>
+            <label><input type="radio" name="r6" value="5">c) Wales</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(5)" name="but">
+          </div>
+        </div>
+        <div id="q6" style="display:none">
+          <div class="quest">7. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a7"> Hogmanay is celebrated on the last day of the year in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r7" value="6">a) Scotland</label>
+            <label><input type="radio" name="r7" value="6">b) Wales</label>
+            <label><input type="radio" name="r7" value="6">c) Ireland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(6)" name="but">
+          </div>
+        </div>
+        <div id="q7" style="display:none">
+          <div class="quest">8. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a8"> Land of My Fathers is the national anthem of the …</div>
+          <div class="ans">
+            <label><input type="radio" name="r8" value="7">a) Scots</label>
+            <label><input type="radio" name="r8" value="7">b) Welsh</label>
+            <label><input type="radio" name="r8" value="7">c) Irish</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(7)" name="but">
+          </div>
+        </div>
+        <div id="q8" style="display:none">
+          <div class="quest">9. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a9"> The monument to … stands in the centre оf Trafalgar Square.</div>
+          <div class="ans">
+            <label><input type="radio" name="r9" value="8">a) Horatio Nelson</label>
+            <label><input type="radio" name="r9" value="8">b) Wellington</label>
+            <label><input type="radio" name="r9" value="8">c) Winston Churchill</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(8)" name="but">
+          </div>
+        </div>
+        <div id="q9" style="display:none">
+          <div class="quest">10. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a10"> … in London was once a prison.</div>
+          <div class="ans">
+            <label><input type="radio" name="r10" value="9">a) Westminster Abbey</label>
+            <label><input type="radio" name="r10" value="9">b) Westminster Palace</label>
+            <label><input type="radio" name="r10" value="9">c) The Tower of London</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(9)" name="but">
+          </div>
+        </div>
+        <div id="q10" style="display:none">
+          <div class="quest">11. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a11"> The largest library in Great Britain is housed in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r11" value="10">a) St. Paul’s Cathedral</label>
+            <label><input type="radio" name="r11" value="10">b) Westminster Abbey</label>
+            <label><input type="radio" name="r11" value="10">c) the British Museum</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(10)" name="but">
+          </div>
+        </div>
+        <div id="q11" style="display:none">
+          <div class="quest">12. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a12"> Christopher Wren’s masterpiece is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r12" value="11">a) Buckingham Palace</label>
+            <label><input type="radio" name="r12" value="11">b) St. Paul’s Cathedral</label>
+            <label><input type="radio" name="r12" value="11">c) The Tower of London</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(11)" name="but">
+          </div>
+        </div>
+        <div id="q12" style="display:none">
+          <div class="quest">13. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a13"> Covent Garden is a …</div>
+          <div class="ans">
+            <label><input type="radio" name="r13" value="12">a) theatre</label>
+            <label><input type="radio" name="r13" value="12">b) museum</label>
+            <label><input type="radio" name="r13" value="12">c) park</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(12)" name="but">
+          </div>
+        </div>
+        <div id="q13" style="display:none">
+          <div class="quest">14. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a14"> The Crown jewels are kept in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r14" value="13">a) Buckingham Palace</label>
+            <label><input type="radio" name="r14" value="13">b) Westminster Abbey</label>
+            <label><input type="radio" name="r14" value="13">c) The Tower of London</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(13)" name="but">
+          </div>
+        </div>
+        <div id="q14" style="display:none">
+          <div class="quest">15. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a15"> … houses the Big Ben bell.</div>
+          <div class="ans">
+            <label><input type="radio" name="r15" value="14">a) The Tower of London</label>
+            <label><input type="radio" name="r15" value="14">b) Westminster Palace</label>
+            <label><input type="radio" name="r15" value="14">c) Buckingham Palace</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(14)" name="but">
+          </div>
+        </div>
+        <div id="q15" style="display:none">
+          <div class="quest">16. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a16"> The ravens are a famous sight of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r16" value="15">a) the Tower of London</label>
+            <label><input type="radio" name="r16" value="15">b) London Zoo</label>
+            <label><input type="radio" name="r16" value="15">c) Covent Garden</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(15)" name="but">
+          </div>
+        </div>
+        <div id="q16" style="display:none">
+          <div class="quest">17. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a17"> Madame Tussaud’s is a museum of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r17" value="16">a) ancient coins</label>
+            <label><input type="radio" name="r17" value="16">b) western paintings</label>
+            <label><input type="radio" name="r17" value="16">c) wax figures</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(16)" name="but">
+          </div>
+        </div>
+        <div id="q17" style="display:none">
+          <div class="quest">18. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a18"> The Changing of the Guard takes place at …</div>
+          <div class="ans">
+            <label><input type="radio" name="r18" value="17">a) Westminster Abbey</label>
+            <label><input type="radio" name="r18" value="17">b) The Tower of London</label>
+            <label><input type="radio" name="r18" value="17">c) Buckingham Palace</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(17)" name="but">
+          </div>
+        </div>
+        <div id="q18" style="display:none">
+          <div class="quest">19. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a19"> The most famous British poets are buried in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r19" value="18">a) Canterbury Cathedral</label>
+            <label><input type="radio" name="r19" value="18">b) The Tower of London</label>
+            <label><input type="radio" name="r19" value="18">c) Westminster Abbey</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(18)" name="but">
+          </div>
+        </div>
+        <div id="q19" style="display:none">
+          <div class="quest">20. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a20"> …, the author of The Canterbury Tales, was the first great story-teller who wrote in English.</div>
+          <div class="ans">
+            <label><input type="radio" name="r20" value="19">a) Thomas Becket</label>
+            <label><input type="radio" name="r20" value="19">b) Geoffrey Chaucer</label>
+            <label><input type="radio" name="r20" value="19">c) Thomas More</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(19)" name="but">
+          </div>
+        </div>
+        <div id="q20" style="display:none">
+          <div class="quest">21. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a21"> … is the greatest representative of the English Renaissance.</div>
+          <div class="ans">
+            <label><input type="radio" name="r21" value="20">a) John Milton</label>
+            <label><input type="radio" name="r21" value="20">b) William Shakespeare</label>
+            <label><input type="radio" name="r21" value="20">c) Edmund Spenser</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(20)" name="but">
+          </div>
+        </div>
+        <div id="q21" style="display:none">
+          <div class="quest">22. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a22"> Gulliver’s Travels, a ship doctor’s account of his voyages into strange places is written by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r22" value="21">a) Jonathan Swift</label>
+            <label><input type="radio" name="r22" value="21">b) Daniel Defoe</label>
+            <label><input type="radio" name="r22" value="21">c) Conan Doyle</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(21)" name="but">
+          </div>
+        </div>
+        <div id="q22" style="display:none">
+          <div class="quest">23. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a23"> The poem Auld Lang Syne, often sung at Hogmanay, is written by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r23" value="22">a) R. Burns</label>
+            <label><input type="radio" name="r23" value="22">b) J. Keats</label>
+            <label><input type="radio" name="r23" value="22">c) P. Shelly</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(22)" name="but">
+          </div>
+        </div>
+        <div id="q23" style="display:none">
+          <div class="quest">24. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a24"> …, a romantic poet died in Greece while fighting against the Turks for Greek independence.</div>
+          <div class="ans">
+            <label><input type="radio" name="r24" value="23">a) Lord Byron</label>
+            <label><input type="radio" name="r24" value="23">b) Robert Burns</label>
+            <label><input type="radio" name="r24" value="23">c) John Lennon</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(23)" name="but">
+          </div>
+        </div>
+        <div id="q24" style="display:none">
+          <div class="quest">25. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a25"> The Irish-born novelist-dramatist …, recipient of the Nobel Prize for literature in&nbsp;1969 lived for a long time in France and wrote his works in French and then translated them himself into English.</div>
+          <div class="ans">
+            <label><input type="radio" name="r25" value="24">a) W.B. Yeats</label>
+            <label><input type="radio" name="r25" value="24">b) S. Beckett</label>
+            <label><input type="radio" name="r25" value="24">c) J. Swift</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(24)" name="but">
+          </div>
+        </div>
+        <div id="q25" style="display:none">
+          <div class="quest">26. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a26"> The author of Lord of the Flies who won the Nobel Prize for literature in&nbsp;1983 was …</div>
+          <div class="ans">
+            <label><input type="radio" name="r26" value="25">a) A. Burgess</label>
+            <label><input type="radio" name="r26" value="25">b) D. Lessing</label>
+            <label><input type="radio" name="r26" value="25">c) W. Golding</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(25)" name="but">
+          </div>
+        </div>
+        <div id="q26" style="display:none">
+          <div class="quest">27. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a27"> The author of the world-famous musical Jesus Christ Superstar is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r27" value="26">a) A. L. Webber</label>
+            <label><input type="radio" name="r27" value="26">b) B. Britten</label>
+            <label><input type="radio" name="r27" value="26">c) E. Elgar</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(26)" name="but">
+          </div>
+        </div>
+        <div id="q27" style="display:none">
+          <div class="quest">28. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a28"> … adapted Shakespeare’s A Midsummer Night’s Dream into opera.</div>
+          <div class="ans">
+            <label><input type="radio" name="r28" value="27">a) Sir Edward Elgar</label>
+            <label><input type="radio" name="r28" value="27">b) Ralph Williams</label>
+            <label><input type="radio" name="r28" value="27">c) Benjamin Britten</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(27)" name="but">
+          </div>
+        </div>
+        <div id="q28" style="display:none">
+          <div class="quest">29. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a29"> Director … moved to the United States in&nbsp;1939 and continued to produce popular films.</div>
+          <div class="ans">
+            <label><input type="radio" name="r29" value="28">a) Alfred Hitchcock</label>
+            <label><input type="radio" name="r29" value="28">b) Charlie Chaplin</label>
+            <label><input type="radio" name="r29" value="28">c) Stanley Kubrick</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(28)" name="but">
+          </div>
+        </div>
+        <div id="q29" style="display:none">
+          <div class="quest">30. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a30"> The Beatles started their career in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r30" value="29">a) Birmingham</label>
+            <label><input type="radio" name="r30" value="29">b) Liverpool</label>
+            <label><input type="radio" name="r30" value="29">c) London</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(29)" name="but">
+          </div>
+        </div>
+        <div id="q30" style="display:none">
+          <div class="quest">31. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a31"> The famous Globe Theatre where Shakespeare staged his plays is situated in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r31" value="30">a) London</label>
+            <label><input type="radio" name="r31" value="30">b) Stratford-upon-Avon</label>
+            <label><input type="radio" name="r31" value="30">c) Glasgow</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(30)" name="but">
+          </div>
+        </div>
+        <div id="q31" style="display:none">
+          <div class="quest">32. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a32"> … is rightfully considered as the founder of realism in the history of the English theatre.</div>
+          <div class="ans">
+            <label><input type="radio" name="r32" value="31">a) Oliver Goldsmith</label>
+            <label><input type="radio" name="r32" value="31">b) Sarah Siddons</label>
+            <label><input type="radio" name="r32" value="31">c) David Garrick</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(31)" name="but">
+          </div>
+        </div>
+        <div id="q32" style="display:none">
+          <div class="quest">33. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a33"> In&nbsp;1768 the Royal Academy was founded in England to promote and encourage the development of arts with … as its first President.</div>
+          <div class="ans">
+            <label><input type="radio" name="r33" value="32">a) J. Reynolds</label>
+            <label><input type="radio" name="r33" value="32">b) Th. Gainsborough</label>
+            <label><input type="radio" name="r33" value="32">c) W. Blake</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(32)" name="but">
+          </div>
+        </div>
+        <div id="q33" style="display:none">
+          <div class="quest">34. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a34"> … is home to the largest collection of portraiture in the world, featuring famous British men and women painted by some of the greatest painters in the history of arts.</div>
+          <div class="ans">
+            <label><input type="radio" name="r34" value="33">a) The National Portrait Gallery</label>
+            <label><input type="radio" name="r34" value="33">b) The Tate Gallery</label>
+            <label><input type="radio" name="r34" value="33">c) The British Museum</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(33)" name="but">
+          </div>
+        </div>
+        <div id="q34" style="display:none">
+          <div class="quest">35. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a35"> Trooping the Colour is one of the most magnificent military ceremonies in Britain which marks …</div>
+          <div class="ans">
+            <label><input type="radio" name="r35" value="34">a) the official birthday of the Monarch</label>
+            <label><input type="radio" name="r35" value="34">b) Remembrance Day</label>
+            <label><input type="radio" name="r35" value="34">c) the State Opening of Parliament</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(34)" name="but">
+          </div>
+        </div>
+        <div id="q35" style="display:none">
+          <div class="quest">36. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a36"> … in London is a vivid illustration of Inigo Jones’ style.</div>
+          <div class="ans">
+            <label><input type="radio" name="r36" value="35">a) The Whitehall palace</label>
+            <label><input type="radio" name="r36" value="35">b) St. Paul’s Cathedral</label>
+            <label><input type="radio" name="r36" value="35">c) Big Ben</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(35)" name="but">
+          </div>
+        </div>
+        <div id="q36" style="display:none">
+          <div class="quest">37. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a37"> The first English opera Dido and Aeneas is composed by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r37" value="36">a) John Gay</label>
+            <label><input type="radio" name="r37" value="36">b) H. Purcell</label>
+            <label><input type="radio" name="r37" value="36">c) Handel</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(36)" name="but">
+          </div>
+        </div>
+        <div id="q37" style="display:none">
+          <div class="quest">38. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a38"> … is a celebrated cabinet-maker producing beautiful, elegant and remarkably comfortable furniture.</div>
+          <div class="ans">
+            <label><input type="radio" name="r38" value="37">a) Robert Adam</label>
+            <label><input type="radio" name="r38" value="37">b) Thomas Chippendale</label>
+            <label><input type="radio" name="r38" value="37">c) James Gibbs</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(37)" name="but">
+          </div>
+        </div>
+        <div id="q38" style="display:none">
+          <div class="quest">39. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a39"> … was one of the most prominent representatives of English classical political economy.</div>
+          <div class="ans">
+            <label><input type="radio" name="r39" value="38">a) Isaac Newton</label>
+            <label><input type="radio" name="r39" value="38">b) Adam Smith</label>
+            <label><input type="radio" name="r39" value="38">c) David Hume</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(38)" name="but">
+          </div>
+        </div>
+        <div id="q39" style="display:none">
+          <div class="quest">40. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a40"> Marriage a la Mode is a masterpiece by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r40" value="39">a) W. Hogarth</label>
+            <label><input type="radio" name="r40" value="39">b) Th. Gainsborough</label>
+            <label><input type="radio" name="r40" value="39">c) W. Blake</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(39)" name="but">
+          </div>
+        </div>
+        <div id="q40" style="display:none">
+          <div class="quest">41. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a41"> Newton’s famous book published in&nbsp;1687 is called …</div>
+          <div class="ans">
+            <label><input type="radio" name="r41" value="40">a) Natural Philosophy</label>
+            <label><input type="radio" name="r41" value="40">b) Mathematical Equations</label>
+            <label><input type="radio" name="r41" value="40">c) Principia</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(40)" name="but">
+          </div>
+        </div>
+        <div id="q41" style="display:none">
+          <div class="quest">42. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a42"> The revolution in natural science is associated with the name of …, who created a materialistic theory of evolution.</div>
+          <div class="ans">
+            <label><input type="radio" name="r42" value="41">a) H. Spencer</label>
+            <label><input type="radio" name="r42" value="41">b) J. Maxwell</label>
+            <label><input type="radio" name="r42" value="41">c) Ch. Darwin</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(41)" name="but">
+          </div>
+        </div>
+        <div id="q42" style="display:none">
+          <div class="quest">43. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a43"> On a national scale British … may be illustrated by their attitude to the monarchy.</div>
+          <div class="ans">
+            <label><input type="radio" name="r43" value="42">a) confidence</label>
+            <label><input type="radio" name="r43" value="42">b) conservatism</label>
+            <label><input type="radio" name="r43" value="42">c) eccentricity</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(42)" name="but">
+          </div>
+        </div>
+        <div id="q43" style="display:none">
+          <div class="quest">44. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a44"> One of the most popular hobbies of the British is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r44" value="43">a) dancing</label>
+            <label><input type="radio" name="r44" value="43">b) politics</label>
+            <label><input type="radio" name="r44" value="43">c) gardening</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(43)" name="but">
+          </div>
+        </div>
+        <div id="q44" style="display:none">
+          <div class="quest">45. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a45"> The Scottish national costume for men is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r45" value="44">a) the tuxedo</label>
+            <label><input type="radio" name="r45" value="44">b) the bearskin</label>
+            <label><input type="radio" name="r45" value="44">c) the kilt</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(44)" name="but">
+          </div>
+        </div>
+        <div id="q45" style="display:none">
+          <div class="quest">46. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a46"> A special place in the life of the British is occupied by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r46" value="45">a) beer</label>
+            <label><input type="radio" name="r46" value="45">b) coffee</label>
+            <label><input type="radio" name="r46" value="45">c) tea</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(45)" name="but">
+          </div>
+        </div>
+        <div id="q46" style="display:none">
+          <div class="quest">47. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a47"> The game that is especially connected with England is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r47" value="46">a) cricket</label>
+            <label><input type="radio" name="r47" value="46">b) basketball</label>
+            <label><input type="radio" name="r47" value="46">c) ice-hockey</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(46)" name="but">
+          </div>
+        </div>
+        <div id="q47" style="display:none">
+          <div class="quest">48. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a48"> In terms of cuisine Scotland is associated with …</div>
+          <div class="ans">
+            <label><input type="radio" name="r48" value="47">a) porridge</label>
+            <label><input type="radio" name="r48" value="47">b) lava bread</label>
+            <label><input type="radio" name="r48" value="47">c) fish and chips</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(47)" name="but">
+          </div>
+        </div>
+        <div id="q48" style="display:none">
+          <div class="quest">49. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a49"> … is regarded a national institution of England.</div>
+          <div class="ans">
+            <label><input type="radio" name="r49" value="48">a) Hamburger</label>
+            <label><input type="radio" name="r49" value="48">b) Fish and chips</label>
+            <label><input type="radio" name="r49" value="48">c) Curry</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(48)" name="but">
+          </div>
+        </div>
+        <div id="q49" style="display:none">
+          <div class="quest">50. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a50"> St Patrick’s Day, the national day of both Northern Ireland and the Republic of Ireland is marked on …</div>
+          <div class="ans">
+            <label><input type="radio" name="r50" value="49">a) April 1</label>
+            <label><input type="radio" name="r50" value="49">b) March 17</label>
+            <label><input type="radio" name="r50" value="49">c) May 17</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(49)" name="but">
+          </div>
+        </div>
+      </form>
+      <div id="q50" style="display:none">
+        <div id="result"></div>
+      </div>
+
+      <hr>
+    </div>
+    <div class="nav-buttons">
+      <a class="nav-button prev-button" title="К предыдущей главе" href="6.4.html" >&#8249;</a>
+      <a class="nav-button next-button" title="К следующей главе" href="7.1.html">&#8250;</a>
+    </div>
+  </div>
+  <script src="../test/func_multiPage.js"></script>
+</body>
+
+</html>

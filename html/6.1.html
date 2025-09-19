@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>British studies</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test 1">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../test/test.css" rel="stylesheet">
+  <script src="../test/test1.js"></script>
+</head>
+
+<body onload="init()">
+  <div class="wrapper">
+    <div class="page-content-wrapper">
+      <h1 class="right">Test 1</h1>
+      <hr>
+      <h2>General Overview of the UK</h2>
+
+      <form name="test">
+        <div id="q0">
+          <div class="quest">1. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a1"> From the European continent the British Isles are separated by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r1" value="0">a) the North Sea and the Atlantic Ocean</label>
+            <label><input type="radio" name="r1" value="0">b) the Irish Sea and the English Channel</label>
+            <label><input type="radio" name="r1" value="0">c) the English Channel and the North Sea</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(0)" name="but">
+          </div>
+        </div>
+        <div id="q1" style="display:none">
+          <div class="quest">2. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a2"> The chief islands of the group of the Channel Islands are the Isles of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r2" value="1">a) Wight and Jersey</label>
+            <label><input type="radio" name="r2" value="1">b) Jersey and Scilly</label>
+            <label><input type="radio" name="r2" value="1">c) Guernsey and Jersey</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(1)" name="but">
+          </div>
+        </div>
+        <div id="q2" style="display:none">
+          <div class="quest">3. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a3"> Politically the British Isles are divided into …</div>
+          <div class="ans">
+            <label><input type="radio" name="r3" value="2">a) three countries</label>
+            <label><input type="radio" name="r3" value="2">b) two countries</label>
+            <label><input type="radio" name="r3" value="2">c) four countries</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(2)" name="but">
+          </div>
+        </div>
+        <div id="q3" style="display:none">
+          <div class="quest">4. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a4"> The people who live on the British Isles are called …</div>
+          <div class="ans">
+            <label><input type="radio" name="r4" value="3">a) the Britons</label>
+            <label><input type="radio" name="r4" value="3">b) the English</label>
+            <label><input type="radio" name="r4" value="3">c) the British</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(3)" name="but">
+          </div>
+        </div>
+        <div id="q4" style="display:none">
+          <div class="quest">5. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a5"> The Isle of Wight is situated in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r5" value="4">a) the English Channel</label>
+            <label><input type="radio" name="r5" value="4">b) the middle of the Irish Sea</label>
+            <label><input type="radio" name="r5" value="4">c) the Sea of the Hebrides</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(4)" name="but">
+          </div>
+        </div>
+        <div id="q5" style="display:none">
+          <div class="quest">6. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a6"> The Isle of Man lies in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r6" value="5">a) the English Channel</label>
+            <label><input type="radio" name="r6" value="5">b) the middle of the Irish Sea</label>
+            <label><input type="radio" name="r6" value="5">c) the Sea of the Hebrides</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(5)" name="but">
+          </div>
+        </div>
+        <div id="q6" style="display:none">
+          <div class="quest">7. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a7"> Anglesey is situated in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r7" value="6">a) the English Channel</label>
+            <label><input type="radio" name="r7" value="6">b) the Irish Sea</label>
+            <label><input type="radio" name="r7" value="6">c) the North Sea</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(6)" name="but">
+          </div>
+        </div>
+        <div id="q7" style="display:none">
+          <div class="quest">8. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a8"> The Isles of Scilly lie in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r8" value="7">a) the English Channel</label>
+            <label><input type="radio" name="r8" value="7">b) the Irish Sea</label>
+            <label><input type="radio" name="r8" value="7">c) the North Sea</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(7)" name="but">
+          </div>
+        </div>
+        <div id="q8" style="display:none">
+          <div class="quest">9. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a9"> The Cheviot Hills serve as a natural borderline between …</div>
+          <div class="ans">
+            <label><input type="radio" name="r9" value="8">a) England and Wales</label>
+            <label><input type="radio" name="r9" value="8">b) England and Scotland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(8)" name="but">
+          </div>
+        </div>
+        <div id="q9" style="display:none">
+          <div class="quest">10. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a10"> The Pennines are the most important mountains in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r10" value="9">a) Scotland</label>
+            <label><input type="radio" name="r10" value="9">b) Wales</label>
+            <label><input type="radio" name="r10" value="9">c) England</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(9)" name="but">
+          </div>
+        </div>
+        <div id="q10" style="display:none">
+          <div class="quest">11. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a11"> The mountains covering practically all the territory of Wales are called …</div>
+          <div class="ans">
+            <label><input type="radio" name="r11" value="10">a) the Cambrian Mountains</label>
+            <label><input type="radio" name="r11" value="10">b) the Pennines</label>
+            <label><input type="radio" name="r11" value="10">c) the Grampian Mountains</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(10)" name="but">
+          </div>
+        </div>
+        <div id="q11" style="display:none">
+          <div class="quest">12. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a12"> The highest peak of the British Isles is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r12" value="11">a) Ben Nevis</label>
+            <label><input type="radio" name="r12" value="11">b) Cross Fell</label>
+            <label><input type="radio" name="r12" value="11">c) Snowdon</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(11)" name="but">
+          </div>
+        </div>
+        <div id="q12" style="display:none">
+          <div class="quest">13. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a13"> Snowdon is the highest peak of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r13" value="12">a) the Grampian Mountains</label>
+            <label><input type="radio" name="r13" value="12">b) the Cambrian Mountains</label>
+            <label><input type="radio" name="r13" value="12">c) the Pennines</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(12)" name="but">
+          </div>
+        </div>
+        <div id="q13" style="display:none">
+          <div class="quest">14. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a14"> The Antrim Mountains are situated in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r14" value="13">a) Scotland</label>
+            <label><input type="radio" name="r14" value="13">b) Wales</label>
+            <label><input type="radio" name="r14" value="13">c) Northern Ireland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(13)" name="but">
+          </div>
+        </div>
+        <div id="q14" style="display:none">
+          <div class="quest">15. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a15"> Land’s End is … point of Great Britain.</div>
+          <div class="ans">
+            <label><input type="radio" name="r15" value="14">a) the most eastern</label>
+            <label><input type="radio" name="r15" value="14">b) the most western</label>
+            <label><input type="radio" name="r15" value="14">c) the most southern</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(14)" name="but">
+          </div>
+        </div>
+        <div id="q15" style="display:none">
+          <div class="quest">16. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a16"> Lizard Point is … point of Great Britain.</div>
+          <div class="ans">
+            <label><input type="radio" name="r16" value="15">a) the most eastern</label>
+            <label><input type="radio" name="r16" value="15">b) the most northern</label>
+            <label><input type="radio" name="r16" value="15">c) the most southern</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(15)" name="but">
+          </div>
+        </div>
+        <div id="q16" style="display:none">
+          <div class="quest">17. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a17"> The longest river of the British Isles is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r17" value="16">a) the Shannon</label>
+            <label><input type="radio" name="r17" value="16">b) the Thames</label>
+            <label><input type="radio" name="r17" value="16">c) the Severn</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(16)" name="but">
+          </div>
+        </div>
+        <div id="q17" style="display:none">
+          <div class="quest">18. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a18"> Glasgow stands on the river …</div>
+          <div class="ans">
+            <label><input type="radio" name="r18" value="17">a) Mersey</label>
+            <label><input type="radio" name="r18" value="17">b) Clyde</label>
+            <label><input type="radio" name="r18" value="17">c) Severn</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(17)" name="but">
+          </div>
+        </div>
+        <div id="q18" style="display:none">
+          <div class="quest">19. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a19"> The Lake District is claimed to be the … inhabited place on the British Isles.</div>
+          <div class="ans">
+            <label><input type="radio" name="r19" value="18">a) driest</label>
+            <label><input type="radio" name="r19" value="18">b) coldest</label>
+            <label><input type="radio" name="r19" value="18">c) wettest</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(18)" name="but">
+          </div>
+        </div>
+        <div id="q19" style="display:none">
+          <div class="quest">20. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a20"> The largest lake in Great Britain is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r20" value="19">a) Loch Lomond</label>
+            <label><input type="radio" name="r20" value="19">b) Lough Neagh</label>
+            <label><input type="radio" name="r20" value="19">c) Loch Ness</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(19)" name="but">
+          </div>
+        </div>
+        <div id="q20" style="display:none">
+          <div class="quest">21. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a21"> The British Isles are known for their greatly … coastline.</div>
+          <div class="ans">
+            <label><input type="radio" name="r21" value="20">a) indented</label>
+            <label><input type="radio" name="r21" value="20">b) sharp</label>
+            <label><input type="radio" name="r21" value="20">c) smooth</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(20)" name="but">
+          </div>
+        </div>
+        <div id="q21" style="display:none">
+          <div class="quest">22. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a22"> The capital of Wales is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r22" value="21">a) Aberystwyth</label>
+            <label><input type="radio" name="r22" value="21">b) Caerphilly</label>
+            <label><input type="radio" name="r22" value="21">c) Cardiff</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(21)" name="but">
+          </div>
+        </div>
+        <div id="q22" style="display:none">
+          <div class="quest">23. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a23"> There are many place-names in Wales beginning with Llan which means an area where a … stands.</div>
+          <div class="ans">
+            <label><input type="radio" name="r23" value="22">a) fort</label>
+            <label><input type="radio" name="r23" value="22">b) church</label>
+            <label><input type="radio" name="r23" value="22">c) castle</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(22)" name="but">
+          </div>
+        </div>
+        <div id="q23" style="display:none">
+          <div class="quest">24. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a24"> The capital of Scotland is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r24" value="23">a) London</label>
+            <label><input type="radio" name="r24" value="23">b) Belfast</label>
+            <label><input type="radio" name="r24" value="23">c) Edinburgh</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(23)" name="but">
+          </div>
+        </div>
+        <div id="q24" style="display:none">
+          <div class="quest">25. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a25"> Geographically Scotland may be divided into … major physical regions.</div>
+          <div class="ans">
+            <label><input type="radio" name="r25" value="24">a) two</label>
+            <label><input type="radio" name="r25" value="24">b) three</label>
+            <label><input type="radio" name="r25" value="24">c) four</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(24)" name="but">
+          </div>
+        </div>
+        <div id="q25" style="display:none">
+          <div class="quest">26. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a26"> The two chief minerals on which the Industrial Revolution was based are …</div>
+          <div class="ans">
+            <label><input type="radio" name="r26" value="25">a) oil and natural gas</label>
+            <label><input type="radio" name="r26" value="25">b) chalk and peat</label>
+            <label><input type="radio" name="r26" value="25">c) coal and iron ore</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(25)" name="but">
+          </div>
+        </div>
+        <div id="q26" style="display:none">
+          <div class="quest">27. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a27"> British industry has become increasingly oriented towards …</div>
+          <div class="ans">
+            <label><input type="radio" name="r27" value="26">a) heavy industry</label>
+            <label><input type="radio" name="r27" value="26">b) light industry</label>
+            <label><input type="radio" name="r27" value="26">c) agriculture</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(26)" name="but">
+          </div>
+        </div>
+        <div id="q27" style="display:none">
+          <div class="quest">28. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a28"> The principal oil-producing area lies in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r28" value="27">a) the Irish Sea</label>
+            <label><input type="radio" name="r28" value="27">b) the English Channel</label>
+            <label><input type="radio" name="r28" value="27">c) the North Sea</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(27)" name="but">
+          </div>
+        </div>
+        <div id="q28" style="display:none">
+          <div class="quest">29. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a29"> Milford Haven is the main port in …</div>
+          <div class="ans">
+            <label><input type="radio" name="r29" value="28">a) England</label>
+            <label><input type="radio" name="r29" value="28">b) Wales</label>
+            <label><input type="radio" name="r29" value="28">c) Scotland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(28)" name="but">
+          </div>
+        </div>
+        <div id="q29" style="display:none">
+          <div class="quest">30. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a30"> The first public railway was opened between …</div>
+          <div class="ans">
+            <label><input type="radio" name="r30" value="29">a) Stockton & Darlington</label>
+            <label><input type="radio" name="r30" value="29">b) Folkestone & Calais</label>
+            <label><input type="radio" name="r30" value="29">c) London and Cambridge</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(29)" name="but">
+          </div>
+        </div>
+        <div id="q30" style="display:none">
+          <div class="quest">31. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a31"> London is served by two major airports …</div>
+          <div class="ans">
+            <label><input type="radio" name="r31" value="30">a) Heathrow & Shannon</label>
+            <label><input type="radio" name="r31" value="30">b) Heathrow & Gatwick</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(30)" name="but">
+          </div>
+        </div>
+        <div id="q31" style="display:none">
+          <div class="quest">32. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a32"> England is divided into … economic regions.</div>
+          <div class="ans">
+            <label><input type="radio" name="r32" value="31">a) 8</label>
+            <label><input type="radio" name="r32" value="31">b) 6</label>
+            <label><input type="radio" name="r32" value="31">c) 5</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(31)" name="but">
+          </div>
+        </div>
+        <div id="q32" style="display:none">
+          <div class="quest">33. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a33"> The industrial region of Lancashire is situated on the … slopes of the Pennines.</div>
+          <div class="ans">
+            <label><input type="radio" name="r33" value="32">a) western</label>
+            <label><input type="radio" name="r33" value="32">b) eastern</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(32)" name="but">
+          </div>
+        </div>
+        <div id="q33" style="display:none">
+          <div class="quest">34. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a34"> The economy of Yorkshire has always been closely connected with …</div>
+          <div class="ans">
+            <label><input type="radio" name="r34" value="33">a) iron</label>
+            <label><input type="radio" name="r34" value="33">b) wool</label>
+            <label><input type="radio" name="r34" value="33">c) coal</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(33)" name="but">
+          </div>
+        </div>
+        <div id="q34" style="display:none">
+          <div class="quest">35. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a35"> The name of the British capital is derived from …</div>
+          <div class="ans">
+            <label><input type="radio" name="r35" value="34">a) the Roman Londinium</label>
+            <label><input type="radio" name="r35" value="34">b) the Celtic Llyn-dyn</label>
+            <label><input type="radio" name="r35" value="34">c) the Latin ‘lapis milliaris’</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(34)" name="but">
+          </div>
+        </div>
+        <div id="q35" style="display:none">
+          <div class="quest">36. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a36"> The idea of building a tunnel which would connect Britain and France was first suggested by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r36" value="35">a) Albert Mathieu</label>
+            <label><input type="radio" name="r36" value="35">b) Napoleon</label>
+            <label><input type="radio" name="r36" value="35">c) Francois Mitterand</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(35)" name="but">
+          </div>
+        </div>
+        <div id="q36" style="display:none">
+          <div class="quest">37. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a37"> The Eurotunnel began to operate …</div>
+          <div class="ans">
+            <label><input type="radio" name="r37" value="36">a) at the end of the 19h century</label>
+            <label><input type="radio" name="r37" value="36">b) at the beginning of the 20th century</label>
+            <label><input type="radio" name="r37" value="36">c) at the end of the 20th century</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(36)" name="but">
+          </div>
+        </div>
+        <div id="q37" style="display:none">
+          <div class="quest">38. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a38"> The Union Jack is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r38" value="37">a) made up of three crosses on the blue ground</label>
+            <label><input type="radio" name="r38" value="37">b) made up of three crosses on the white ground</label>
+            <label><input type="radio" name="r38" value="37">c) made up of three stripes</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(37)" name="but">
+          </div>
+        </div>
+        <div id="q38" style="display:none">
+          <div class="quest">39. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a39"> The three crosses of the Union Jack …</div>
+          <div class="ans">
+            <label><input type="radio" name="r39" value="38">a) reflect the three religions in the country</label>
+            <label><input type="radio" name="r39" value="38">b) are the crosses of three countries</label>
+            <label><input type="radio" name="r39" value="38">c) symbolize the union of Wales, England and Scotland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(38)" name="but">
+          </div>
+        </div>
+        <div id="q39" style="display:none">
+          <div class="quest">40. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a40"> The leek is the national emblem of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r40" value="39">a) Scotland</label>
+            <label><input type="radio" name="r40" value="39">b) England</label>
+            <label><input type="radio" name="r40" value="39">c) Wales</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(39)" name="but">
+          </div>
+        </div>
+        <div id="q40" style="display:none">
+          <div class="quest">41. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a41"> The shamrock is the national emblem of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r41" value="40">a) Ireland</label>
+            <label><input type="radio" name="r41" value="40">b) Scotland</label>
+            <label><input type="radio" name="r41" value="40">c) Wales</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(40)" name="but">
+          </div>
+        </div>
+        <div id="q41" style="display:none">
+          <div class="quest">42. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a42"> The patron saint of England is …</div>
+          <div class="ans">
+            <label><input type="radio" name="r42" value="41">a) St. Andrew</label>
+            <label><input type="radio" name="r42" value="41">b) St. Patrick</label>
+            <label><input type="radio" name="r42" value="41">c) St. George</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(41)" name="but">
+          </div>
+        </div>
+        <div id="q42" style="display:none">
+          <div class="quest">43. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a43"> The red rose became the emblem of England after …</div>
+          <div class="ans">
+            <label><input type="radio" name="r43" value="42">a) the Bourgeois revolution</label>
+            <label><input type="radio" name="r43" value="42">b) the Wars of the Roses</label>
+            <label><input type="radio" name="r43" value="42">c) the Hundred Years’ War</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(42)" name="but">
+          </div>
+        </div>
+        <div id="q43" style="display:none">
+          <div class="quest">44. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a44"> The symbol of … is not reflected in the Union Jack.</div>
+          <div class="ans">
+            <label><input type="radio" name="r44" value="43">a) Ireland</label>
+            <label><input type="radio" name="r44" value="43">b) Wales</label>
+            <label><input type="radio" name="r44" value="43">c) Scotland</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(43)" name="but">
+          </div>
+        </div>
+        <div id="q44" style="display:none">
+          <div class="quest">45. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a45"> The Welsh flag is a red … on a white and green ground.</div>
+          <div class="ans">
+            <label><input type="radio" name="r45" value="44">a) arm</label>
+            <label><input type="radio" name="r45" value="44">b) dragon</label>
+            <label><input type="radio" name="r45" value="44">c) rose</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(44)" name="but">
+          </div>
+        </div>
+        <div id="q45" style="display:none">
+          <div class="quest">46. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a46"> The origin of the name of the river Severn is connected with the name of a … goddess Sabrina.</div>
+          <div class="ans">
+            <label><input type="radio" name="r46" value="45">a) Celtic</label>
+            <label><input type="radio" name="r46" value="45">b) Roman</label>
+            <label><input type="radio" name="r46" value="45">c) Norman</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(45)" name="but">
+          </div>
+        </div>
+        <div id="q46" style="display:none">
+          <div class="quest">47. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a47"> The climate of Great Britain is influenced by …</div>
+          <div class="ans">
+            <label><input type="radio" name="r47" value="46">a) the North Sea</label>
+            <label><input type="radio" name="r47" value="46">b) the Gulf Stream</label>
+            <label><input type="radio" name="r47" value="46">c) the Atlantic Ocean</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(46)" name="but">
+          </div>
+        </div>
+        <div id="q47" style="display:none">
+          <div class="quest">48. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a48"> Britain is one of the most urbanized countries in Europe with some … of urban population.</div>
+          <div class="ans">
+            <label><input type="radio" name="r48" value="47">a) 50&nbsp;%</label>
+            <label><input type="radio" name="r48" value="47">b) 60&nbsp;%</label>
+            <label><input type="radio" name="r48" value="47">c) 80&nbsp;%</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(47)" name="but">
+          </div>
+        </div>
+        <div id="q48" style="display:none">
+          <div class="quest">49. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a49"> In the 1960s several discoveries of natural gas were made on the continental shelf in the bed of …</div>
+          <div class="ans">
+            <label><input type="radio" name="r49" value="48">a) the Irish Sea</label>
+            <label><input type="radio" name="r49" value="48">b) the North Sea</label>
+            <label><input type="radio" name="r49" value="48">c) the English Channel</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(48)" name="but">
+          </div>
+        </div>
+        <div id="q49" style="display:none">
+          <div class="quest">50. <img src="../test/pixel.gif" alt="" width="10" height="10" id="a50"> Less than … per cent of the population are involved in agriculture.</div>
+          <div class="ans">
+            <label><input type="radio" name="r50" value="49">a) 2</label>
+            <label><input type="radio" name="r50" value="49">b) 5</label>
+            <label><input type="radio" name="r50" value="49">c) 10</label>
+          </div>
+          <div>
+            <input type="button" class="but" value="Answer" onClick="checkQuestion(49)" name="but">
+          </div>
+        </div>
+      </form>
+      <div id="q50" style="display:none">
+        <div id="result"></div>
+      </div>
+
+      <hr>
+    </div>
+    <div class="nav-buttons">
+      <a class="nav-button prev-button" title="К предыдущей главе" href="5.5.html" >&#8249;</a>
+      <a class="nav-button next-button" title="К следующей главе" href="6.2.html">&#8250;</a>
+    </div>
+  </div>
+  <script src="../test/func_multiPage.js"></script>
+</body>
+
+</html>
