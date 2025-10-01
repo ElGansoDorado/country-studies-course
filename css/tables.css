@@ -19,8 +19,8 @@ th {
 	text-align: center;
 }
 
-th > p,
-td > p {
+th>p,
+td>p {
 	text-indent: 0;
 }
 
@@ -88,4 +88,15 @@ td.vertical {
 	border-collapse: collapse;
 	font: 12pt Times New Roman;
 	padding: 1px 3px;
+}
+
+@media screen and (max-width: 800px) {
+	tr,
+	td,
+	th,
+	#imgtable tr,
+	#imgtable td,
+	#imgtable th {
+		font: 10pt Times New Roman;
+	}
 }
