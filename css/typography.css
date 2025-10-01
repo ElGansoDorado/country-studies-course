@@ -94,3 +94,54 @@ h4 {
 .bold {
 	font-weight: bold;
 }
+
+.long-word {
+	font-size: clamp(8px, 4vw, 21px);
+	word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+	p {
+		text-indent: 30px;
+	}
+
+	li,
+	p {
+		font-size: 12px;
+	}
+
+	h1,
+	h2 {
+		font-size: 16pt;
+		text-align: center;
+	}
+
+	h3 {
+		text-align: center;
+		margin: 15px 0 5px;
+		font-size: 14pt;
+	}
+
+	h4 {
+		text-align: left;
+		margin: 15px 0 5px;
+		text-indent: 40px;
+		font-size: 12pt;
+	}
+
+	.grif-line {
+		text-align: center;
+		text-decoration: underline;
+		font-size: 9pt;
+	}
+
+	.recomend {
+		text-align: center;
+		font-style: italic;
+		font-size: 9pt;
+	}
+
+	.small {
+		font-size: 9pt;
+	}
+}

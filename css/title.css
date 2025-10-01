@@ -39,7 +39,8 @@
 }
 
 .author {
-	margin-top: 60px; /* Чтобы название поднять на уровень навигационных кнопок (зависит от наличия кафедры и для кого ЭУМК) */
+	margin-top: 60px;
+	/* Чтобы название поднять на уровень навигационных кнопок (зависит от наличия кафедры и для кого ЭУМК) */
 	text-align: center;
 	text-indent: 0;
 	font-weight: bold;
@@ -56,7 +57,7 @@
 }
 
 .down-brsu {
-	font-size: 12pt;	
+	font-size: 12pt;
 	text-align: center;
 	text-indent: 0;
 }
@@ -71,4 +72,33 @@
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	font-size: 12pt;
+}
+
+@media screen and (max-width: 800px) {
+	.department {
+		font-size: 12pt;
+	}
+
+	.author {
+		font-size: 14pt;
+	}
+
+	.book-title {
+		margin: 15px 0;
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20pt;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.down-brsu {
+		font-size: 10pt;
+		text-align: center;
+		text-indent: 0;
+	}
+
+	.footer-grif {
+		font-size: 10pt;
+	}
 }
