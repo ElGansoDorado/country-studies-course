@@ -50,14 +50,16 @@
 
 /* Начало: видимо увеличивающаяся картинка при	наведении */
 a.rollover {
-	background: url("../img/t1.3-3.png"); /* Путь к файлу с исходным рисунком	*/
+	background: url("../img/t1.3-3.png");
+	/* Путь к файлу с исходным рисунком	*/
 	display: block;
 	width: 36px;
 	height: 87px;
 }
 
 a.rollover:hover {
-	background: url("../img/t1.3.png"); /* Путь к файлу с заменяемым рисунком	*/
+	background: url("../img/t1.3.png");
+	/* Путь к файлу с заменяемым рисунком	*/
 }
 
 /* Начало: это я не понял что */
@@ -83,4 +85,17 @@ a.rollover:hover {
 .main-title-big {
 	font-family: 'Lucida Handwriting', serif;
 	font-size: 36pt;
+}
+
+.content-book {
+	width: max-content;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	background-color: #fff;
+	-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
